@@ -2,12 +2,12 @@
  * 
  */
 $(document).ready(function() {
-	$('#dos2unixButton').click(function() {
+	$('#win2unixButton').click(function() {
 		var dosAddress = $('#dosAddress').val();
 		
 		$.ajax({
 			type:'GET',
-			url: "/Dos2UnixAddressConverter/convert?dosAddress=" +dosAddress,
+			url: "/Windows2UnixPathConverter/convert?winPath=" +winPath,
 			dataType: 'json',
 			success: function(result) {
 				$('#unixAddress').val(result.unixAddress);
@@ -22,9 +22,9 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
-	$('#addressForm').submit(function(e) {
-		$.post('/Dos2UnixAddressConverter/convert', $(this).serialize(), function(result) {
-			$('#unixAddress').val(result.unixAddress);
+	$('#pathForm').submit(function(e) {
+		$.post('/Windows2UnixPathConverter/convert', $(this).serialize(), function(result) {
+			$('#unixPath').val(result.unixPath);
 		})
 		
 		e.preventDefault();
