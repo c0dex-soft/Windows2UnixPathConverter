@@ -1,0 +1,99 @@
+body {
+    background-color: #eee;
+    font: helvetica;
+}
+
+#container {
+    width: 700px;
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px;
+}
+
+.green {
+    font-weight: bold;
+    color: green;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+label {
+	color: #c40000;
+	font-weight:bold;
+    width: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+table {
+    width: 500px;
+    background:#D3E4E5;
+    border:1px solid gray;
+    border-collapse:collapse;
+    color:#fff;
+    font:normal 12px verdana, arial, helvetica, sans-serif;
+    text-align: center;
+}
+
+caption {
+    border:1px solid #28346d;
+    color: #28346d;
+    font-weight:bold;
+    letter-spacing:20px;
+    padding:6px 4px 8px 0px;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+td, th {
+    color:#28346d;
+    padding:.4em;
+}
+
+tr {
+    border:1px dotted gray;
+}
+
+thead th, tfoot th {
+    background:#28346d;
+    color:#FFFFFF;
+    padding:3px 10px 3px 10px;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+input[type="text"] {
+	width: 700px;
+	height: 20px;
+	padding: 2px;
+	margin: 2px;
+	margin-bottom: 30px;
+}
+
+textarea {
+	color: #03d327;
+	background: black;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	border-radius: 7px;
+}
+
+#theJson {
+	color: #660092;
+}
+
+button, input[type="submit"] {
+	margin: 10px 0px;
+}
