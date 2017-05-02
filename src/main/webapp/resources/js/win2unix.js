@@ -3,7 +3,7 @@
  */
 $(document).ready(function() {
 	$('#win2unixButton').click(function() {
-		var dosAddress = $('#dosAddress').val();
+		var winPath = $('#winPath').val();
 		
 		$.ajax({
 			type:'GET',

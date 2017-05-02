@@ -32,7 +32,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/convert")
 	@ResponseBody
-	public Path convertWinToUnixGet(Model model, @RequestParam("dosAddress") String winPath) {
+	public Path convertWinToUnixGet(Model model, @RequestParam("winPath") String winPath) {
 		Path unixPath = new Path();
 		unixPath.setUnixPath(pathService.convertToUnix(winPath));
 		return unixPath;
